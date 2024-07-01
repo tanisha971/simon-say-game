@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P|Righteous);
+* {
+    text-align: center;
+    justify-content: center;
+}
+
+body {
+ font-family: 'Righteous', cursive;
+ padding: 0;
+ margin: 0;
+ text-align: center;
+ justify-content: center;
+ color: white;
+ display: block;
+}
+
+.main-div {
+    /* display: flex; */
+    justify-content: center;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+.pad.red {
+    left:15px;
+    top:15px;
+    background:rgb(255, 0, 0);
+    /* background:rgb(252, 155, 155); */
+    -webkit-border-radius:320px 20px 20px;
+    -moz-border-radius:320px 20px 20px;
+    -o-border-radius:320px 20px 20px;
+    border-radius:320px 20px 20px;
+}
+.pad.green {
+    right:15px;
+    top:15px;
+    background:rgb(0,255,0);
+    /* background:rgb(168, 253, 168); */
+    -webkit-border-radius:20px 320px 20px 20px;
+    -moz-border-radius:20px 320px 20px 20px;
+    -o-border-radius:20px 320px 20px 20px;
+    border-radius:20px 320px 20px 20px;
+}
+.pad.yellow {
+    bottom:15px;
+    right:15px;
+    background:rgb(255,255,0);
+    /* background:rgb(253, 253, 165); */
+    -webkit-border-radius:20px 20px 320px 20px;
+    -moz-border-radius:20px 20px 320px 20px;
+    -o-border-radius:20px 20px 320px 20px;
+    border-radius:20px 20px 320px 20px;
+}
+.pad.blue {
+    bottom:15px;
+    left:15px;
+    background:rgb(0,0,255);
+    /* background:rgb(148, 148, 245); */
+    -webkit-border-radius:20px 20px 20px 320px;
+    -moz-border-radius:20px 20px 20px 320px;
+    -o-border-radius:20px 20px 20px 320px;
+    border-radius:20px 20px 20px 320px;
+}
+
+.under {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.simon {
+    position:relative;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    width:400px;
+    height:400px;
+    background:#000;
+    margin:20px;
+    background:rgb(0,0,0);
+    border: 2px solid rgba(128, 128, 128, 0.421);
+}
+.simon::before {
+    content:' ';
+    left:50%;
+    top:50%;
+    -webkit-border-radius:85px;
+    -moz-border-radius:85px;
+    -o-border-radius:85px;
+    border-radius:85px;
+    position:absolute;
+    display:block;
+    width:170px;
+    height:170px;
+    background:#000;
+    z-index:99;
+    margin: -85px;
+}
+.simon .display {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    line-height: 160%;
+    position:absolute;
+    cursor: pointer;
+    display:block;
+    background:rgb(255,255,255);
+    color: #000;
+    width:120px;
+    padding-top:40px;/* dont remove */
+    height:80px;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    -o-border-radius:60px;
+    border-radius:60px;
+    left:50%;
+    top:50%;
+    text-align:center;
+    z-index:100;
+    margin:-60px;
+}
+.pad {
+    position:absolute;/* why ? */
+    width:180px;
+    height:180px;
+    background:rgba(20,20,20,1);
+    /* opacity: 0.5; */
+    -webkit-transition:all 300ms ease;
+    -moz-transition:all 300ms ease;
+    -o-transition:all 300ms ease;
+    transition:all 300ms ease;
+}
+.pad.hover {
+    opacity: 0.7;
+}
+.pad.active {
+    opacity: 1;   
+}
+
+.pad.flash {
+    background-color: white;
+}
+
+.pad.userFlash {
+    opacity: 0.4;
+}

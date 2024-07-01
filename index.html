@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Say Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <video autoplay muted loop id="video-background">
+            <source src="bg video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <h1>Simon Say Game</h1>
+        <h2>Press 'Start' to start the game</h2>
+        <div class="under">
+            <div class="simon">
+                <div class="pad red btn" id="red" type="button"></div>
+                <div class="pad green btn" id="green" type="button"></div>
+                <div class="pad yellow btn" id="yellow" type="button"></div>
+                <div class="pad blue btn" id="blue" type="button"></div>
+                <div class="display" id="display" type="button">Start</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>        
+</body>
+</html>
